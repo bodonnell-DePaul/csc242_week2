@@ -24,6 +24,20 @@ class Point:
     def __repr__(self):
         return "Point({},{})".format(self.x, self.y)
 
+class Animal:
+    'represents an animal'
+    def setSpecies(self, species):
+        'sets the animal species'
+        self.spec = species
+    def setLanguage(self, language):
+        'sets the animal language'
+        self.lang = language
+    def speak(self):
+        'prints a sentence by the animal'
+        print('I am a {} and I {}.'.format(self.spec, self.lang))
+
+        
+
 
 p1 = Point()
 p1.setx(10)
